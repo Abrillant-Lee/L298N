@@ -30,6 +30,7 @@
     else                                 \
         GPIO_ResetBits(GPIOA, GPIO_Pin_5)
 
+void Putter_Config(void);
 void Putter_Stop(void);
 void Putter_Up(void);
 void Putter_Down(void);
