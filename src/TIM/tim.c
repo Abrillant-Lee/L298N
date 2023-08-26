@@ -54,12 +54,12 @@ static void GENERAL_TIM_Mode_Config(void)
     TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
 
     // 输出比较通道 x
-    TIM_OCInitStructure.TIM_Pulse = 20;
+    TIM_OCInitStructure.TIM_Pulse = 0;
     TIM_OCxInit(GENERAL_TIM, &TIM_OCInitStructure);
     TIM_ARRPreloadConfig(GENERAL_TIM, ENABLE);
 
     // 输出比较通道 x
-    TIM_OCInitStructure.TIM_Pulse = 100;
+    TIM_OCInitStructure.TIM_Pulse = 0;
     TIM_OCyInit(GENERAL_TIM, &TIM_OCInitStructure);
     TIM_ARRPreloadConfig(GENERAL_TIM, ENABLE);
 
